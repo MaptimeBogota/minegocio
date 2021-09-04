@@ -1,4 +1,4 @@
-# [onosm.org](https://onosm.org/)
+# Notes de MaptimeBogota
 
 Notes es un fork de OnOSM.org enfocado a Bogotá. Esta página ayuda a los propietarios de negocios a ofrecer datos estructurados sobre sus tiendas.
 El resultado es escrito en una [Nota de OpenStreetMap](https://wiki.openstreetmap.org/wiki/ES:Notas) de forma anónima.
