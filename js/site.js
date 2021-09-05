@@ -10,6 +10,7 @@ findme_marker.setOpacity(0);
 
 if (location.hash) location.hash = '';
 
+/*
 i18n.init({ fallbackLng: 'es', postAsync: 'false' }, function() {
     $("body").i18n();
 
@@ -26,6 +27,12 @@ i18n.init({ fallbackLng: 'es', postAsync: 'false' }, function() {
          $.getJSON('./locales/es/categories.json', buildSelectControl);
     });
 });
+*/
+i18next.init((err, t) => {
+  if (err) return console.log('something went wrong loading', err);
+  t('key'); // -> same as i18next.t
+});
+
 
 function zoom_to_point(chosen_place, map, marker) {
     console.log(chosen_place);
