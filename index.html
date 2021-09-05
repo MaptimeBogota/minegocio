@@ -39,6 +39,8 @@
             </div>
 
             <div class='col12' id='address-step'>
+                        <select style='width: 400px;' id='category' multiple='multiple' data-placeholder='Escoge una o varias categorías...' class='col10'>
+                        </select>
                 <div class='center pad2'>
                     <span id='instructions'>Primero, indícanos dónde está tu establecimiento. Para esto puedes poner la dirección (Carrera 24 # 53-05). Si no te logra ubicar, puedes indicar el nombre de la localidad, de la UPZ o del barrio.<br/>Los negocios virtuales que no tienen una establecimiento físico no pueden agregarse al mapa.</span>
                 </div>
@@ -71,8 +73,6 @@
                 <div class='col12'>
                     <div class='clearfix col12'>
                         <label for='category'>Tipo de establecimiento:</label>
-                        <select style='width: 400px;' id='category' multiple='multiple' data-placeholder='Escoge una o varias categorías...' class='col10'>
-                        </select>
                     </div>
                     <div class='col6'>
                         <label for='name'>Nombre del establecimiento (Obligatorio):</label>
@@ -105,14 +105,14 @@
             <div class='col12 pad2 hide' id='confirm-step'>
                 <p><strong>¡Gracias por aportar datos al mapa!</strong> Un voluntario de OpenStreetMap agregará prontamente tus datos al mapa.</p>
                 <p><span>Tus datos quedaron en una nota dentro del sistema. Puedes ver la nota recién creada y estar atento a sus actualizaciones en este enlace:</span><span id='linkcoords'>&nbsp;</span></p>
-                <p>¿Sabías que tu mismo puedes agregar datos al mapa y evitar la espera? Es muy fácil comenzar a <a href=\"http://openstreetmap.org/edit\">editar OpenStreetMap</a> en tu navegador. Visita la página <a href='https://learnosm.org/es/'>learnosm.org</a> o participa en un evento de <a href='http://maptime.io/bogota/'>MaptimeBogota</a>.</p>
+                <p>¿Sabías que tu mismo puedes agregar datos al mapa y evitar la espera? Es muy fácil comenzar a <a href="http://openstreetmap.org/edit">editar OpenStreetMap</a> en tu navegador. Visita la página <a href='https://learnosm.org/es/'>learnosm.org</a> o participa en un evento de <a href='http://maptime.io/bogota/'>MaptimeBogota</a>.</p>
                 <p><span>¿Quieres agregar otro establecimiento?</span>&nbsp;<a href="#location" onclick="clearFields()">Volver a la pantalla inicial.</a>!
                 </p>
             </div>
 
             <footer>
-                <p> Si tienes alguna pregunta, puedes escribirnos a <a href='mailto:maptimebogota@gmail.com'>maptimeBogota@gmail.com</a></p>
-                <p class="center">Código fuente disponible en <a href='https://github.com/MaptimeBogota/notes'>GitHub</a>. Esta página es una bifurcación de <a href='https://www.onosm.org/'>OnOSM.org</a>.</p>
+                <p class="center"> Si tienes alguna pregunta, puedes escribirnos a <a href='mailto:maptimebogota@gmail.com'>maptimeBogota@gmail.com</a></p>
+                <p class="center">Código fuente disponible en <a alt="Repositorio código" href='https://github.com/MaptimeBogota/notes'>GitHub</a>. Esta página es una bifurcación de <a alt="Sitio original" href='https://www.onosm.org/'>OnOSM.org</a>.</p>
             </footer>
         </div>
         <script src='js/site.js'></script>
