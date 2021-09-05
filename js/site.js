@@ -10,7 +10,7 @@ findme_marker.setOpacity(0);
 
 if (location.hash) location.hash = '';
 
-i18n.init({ fallbackLng: 'en-US', postAsync: 'false' }, function() {
+i18n.init({ fallbackLng: 'es', postAsync: 'false' }, function() {
     $("body").i18n();
 
     var detectedLang = i18n.lng();
