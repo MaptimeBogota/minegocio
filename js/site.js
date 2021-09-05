@@ -20,14 +20,13 @@ function zoom_to_point(chosen_place, map, marker) {
     map.setView(chosen_place, 18, {animate: true});
 }
 
-var buildSelectControl = function(data) {
+
+$.getJSON('./categories.json', function(data) {
         $("#category").select2({
             multiple: true,
             data: data,
-        });
-    };
-
-    $.getJSON('./categories.json', buildSelectControl);
+        })})
+        ;
 
 $("#use_my_location").click(function (e) {
     $("#couldnt-find").hide();
