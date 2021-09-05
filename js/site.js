@@ -23,7 +23,7 @@ i18n.init({ fallbackLng: 'en-US', postAsync: 'false' }, function() {
 
     $.getJSON('./locales/' + detectedLang + '/categories.json', buildSelectControl).fail(function () {
         // 404? Fall back to en-US
-         $.getJSON('./locales/en-US/categories.json', buildSelectControl);
+         $.getJSON('./locales/es/categories.json', buildSelectControl);
     });
 });
 
@@ -128,7 +128,7 @@ $("#collect-data-done").click(function() {
     location.hash = '#done';
 
     var note_body =
-        "onosm.org submitted note from a business:\n" +
+        "Datos de negocio: \n" +
         "name: " + $("#name").val() + "\n" +
         "phone: " + $("#phone").val() + "\n" +
         "website: " + $("#website").val() + "\n" +
@@ -137,7 +137,8 @@ $("#collect-data-done").click(function() {
         "email: " + $("#email").val() + "\n" +
         "hours: " + $("#opening_hours").val() + "\n" +
         "category: " + $("#category").val().join(", ") + "\n" +
-        "address: " + $("#address").val(),
+        "address: " + $("#address").val() + "\n" +
+        "#MaptimeBogota \n",
         latlon = findme_marker.getLatLng(),
         note_data = {
             lat: latlon.lat,
