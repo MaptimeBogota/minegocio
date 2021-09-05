@@ -40,7 +40,7 @@ $("#use_my_location").click(function (e) {
 
             zoom_to_point(point, findme_map, findme_marker);
 
-            $('#success').html("<strong>¡Encontrado!</strong> Mueve la chincheta hasta que esté <strong>exactamente sobre la ubicación de tu negocio</strong>.<br />Te recomendamos que hagas bastante zoom para ubicar la chincheta correctamente. Cuando lo hayas ubicado bien, puedes pasar a la siguiente sección: <a href='javascript:check_coordinates()'>Agregar información del establecimiento</a>.");
+            $('#success').html("<strong>¡Encontrado!</strong> Mueve la chincheta hasta que esté <strong>exactamente sobre la ubicación de tu negocio</strong>.<br />Te recomendamos que hagas bastante zoom para ubicar la chincheta correctamente. Cuando la hayas ubicado bien, puedes pasar a la siguiente sección: <a href='javascript:check_coordinates()'>Agregar información del establecimiento</a>.");
             $('#success').show();
             window.scrollTo(0, $('#address').position().top - 30);
             $('.step-2 a').attr('href', '#details');
@@ -123,15 +123,15 @@ $("#collect-data-done").click(function() {
     var note_body =
         "Datos del establecimiento: \n" +
         "Nombre: " + $("#name").val() + "\n" +
-        "Teléfono: " + $("#phone").val() + "\n" +
-        "Website: " + $("#website").val() + "\n" +
-        "Twitter: " + $("#twitter").val() + "\n" +
-        "Facebook: " + $("#facebook").val() + "\n" +
-        "Correo-e: " + $("#email").val() + "\n" +
-        "Horario: " + $("#opening_hours").val() + "\n" +
         "Categorías: " + $("#category").val().join(", ") + "\n" +
         "Dirección: " + $("#address").val() + "\n" +
-        "#MaptimeBogota \n",
+        "Teléfono: " + $("#phone").val() + "\n" +
+        "Horario: " + $("#opening_hours").val() + "\n" +
+        "Website: " + $("#website").val() + "\n" +
+        "Correo-e: " + $("#email").val() + "\n" +
+        "Twitter: " + $("#twitter").val() + "\n" +
+        "Facebook: " + $("#facebook").val() + "\n" +
+        "#MaptimeBogota https://maptimebogota.github.io/minegocio\n",
         latlon = findme_marker.getLatLng(),
         note_data = {
             lat: latlon.lat,
