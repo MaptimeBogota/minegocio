@@ -1,8 +1,8 @@
 var findme_map = L.map('findme-map')
-    .setView([37.7, -97.3], 3),
+    .setView([4.65341, -74.0836337.7], 12),
     osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-    osmAttrib = 'Map data © OpenStreetMap contributors',
-    osm = L.tileLayer(osmUrl, {minZoom: 2, maxZoom: 19, attribution: osmAttrib}).addTo(findme_map),
+    osmAttrib = '©OpenStreetMap contributors',
+    osm = L.tileLayer(osmUrl, {minZoom: 9, maxZoom: 19, attribution: osmAttrib}).addTo(findme_map),
     category_data = [];
 
 var findme_marker = L.marker([0,0], {draggable:true}).addTo(findme_map);
@@ -115,10 +115,10 @@ $("#collect-data-done").click(function() {
     if ($("#category").val().length == 0) {
         $("#form-invalid").text(i18n.t('validation.missingCategory'));
         return false;
-    } else if ($("#name").val().length < 3) {
+    } else if ($("#name").val().length < 2) {
         $("#form-invalid").text(i18n.t('validation.missingName'));
         return false;
-    } else if ($("#phone").val().length < 5 && $("#website").length < 10) {
+    } else if ($("#phone").val().length < 7 && $("#website").length < 10) {
         $("#form-invalid").text(i18n.t('validation.missingPhoneOrWebsite'));
         return false;
     } else {
@@ -128,16 +128,16 @@ $("#collect-data-done").click(function() {
     location.hash = '#done';
 
     var note_body =
-        "Datos de negocio: \n" +
-        "name: " + $("#name").val() + "\n" +
-        "phone: " + $("#phone").val() + "\n" +
-        "website: " + $("#website").val() + "\n" +
-        "twitter: " + $("#twitter").val() + "\n" +
-        "facebook: " + $("#facebook").val() + "\n" +
-        "email: " + $("#email").val() + "\n" +
-        "hours: " + $("#opening_hours").val() + "\n" +
-        "category: " + $("#category").val().join(", ") + "\n" +
-        "address: " + $("#address").val() + "\n" +
+        "Datos del establecimiento: \n" +
+        "Nombre: " + $("#name").val() + "\n" +
+        "Teléfono: " + $("#phone").val() + "\n" +
+        "Website: " + $("#website").val() + "\n" +
+        "Twitter: " + $("#twitter").val() + "\n" +
+        "Facebook: " + $("#facebook").val() + "\n" +
+        "Correo-e: " + $("#email").val() + "\n" +
+        "Horario: " + $("#opening_hours").val() + "\n" +
+        "Categorías: " + $("#category").val().join(", ") + "\n" +
+        "Dirección: " + $("#address").val() + "\n" +
         "#MaptimeBogota \n",
         latlon = findme_marker.getLatLng(),
         note_data = {

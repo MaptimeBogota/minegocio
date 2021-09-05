@@ -2,7 +2,7 @@
   "app": {
     "title": "Agrega tu establecimiento a OpenStreetMap",
     "desc": "OpenStreetMap es un mapa global y abierto, utilizado por millones de personas en todo el mundo para navegar y encontrar establecimientos.<br/>¡Añadir al mapa tu local comercial, punto de venta, negocio, tienda o comercio es fácil y gratuito! Si tienes alguna pregunta, puedes escribirnos a <a href='mailto:maptimebogota@gmail.com'>maptimeBogota@gmail.com</a>",
-    "footer": "Código fuente disponible en <a href='https://github.com/MaptimeBogota/notes'>GitHub. Esta página es una bifurcación de <a href='https://www.onosm.org/'>OnOSM.org</a>."
+    "footer": "Código fuente disponible en <a href='https://github.com/MaptimeBogota/notes'>GitHub</a>. Esta página es una bifurcación de <a href='https://www.onosm.org/'>OnOSM.org</a>."
   },
 
   "step1": {
