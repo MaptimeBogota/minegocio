@@ -1,57 +1,65 @@
 ﻿{
   "app": {
-    "title": "En OpenStreetMap",
-    "desc": "OpenStreetMap es un mapa mundial abierto utilizado por personas de todo el mundo para navegar y encontrar negocios locales.<br/>¡Es fácil y gratuito añadir su negocio al mapa!",
-    "footer": "Código fuente disponible en <a href='https://github.com/osmlab/onosm.org'>GitHub</p>"
+    "title": "Agrega tu establecimiento a OpenStreetMap",
+    "desc": "OpenStreetMap es un mapa global y abierto, utilizado por millones de personas en todo el mundo para navegar y encontrar establecimientos.<br/>¡Añadir al mapa tu local comercial, punto de venta, negocio, tienda o comercio es fácil y gratuito! Si tienes alguna pregunta, puedes escribirnos a <a href='mailto:maptimebogota@gmail.com'>maptimeBogota@gmail.com</a>",
+    "footer": "Código fuente disponible en <a href='https://github.com/MaptimeBogota/notes'>GitHub. Esta página es una bifurcación de <a href='https://www.onosm.org/'>OnOSM.org</a>."
   },
+
   "step1": {
-    "title": "Ubicación",
-    "desc": "Empiece por decirnos dónde se encuentra su negocio.",
-    "addr": "Avenida América, España",
-    "button": "Buscar esta dirección",
-    "fail": "<strong>No pudimos encontrar su dirección.</strong> Intente buscar su calle o ciudad sin la dirección.",
-    "use_location": "usar mi ubicación actual",
+    "title": "Paso 1: Ubicación",
+    "desc": "Primero, indícanos dónde está tu establecimiento. Para esto puedes poner la dirección (Carrera 24 # 53-05). Si no te logra ubicar, puedes indicar el nombre de la localidad, de la UPZ o del barrio. Recuerda siempre poner al final: Bogota, Colombia.<br/>Los negocios virtuales que no tienen una establecimiento físico no pueden agregarse al mapa.",
+    "addr": "Galerías, Bogotá, Colombia",
+    "button": "Buscar",
+    "fail": "<strong>No pudimos encontrar esta ubicación.</strong> Intenta buscar por el nombre de calle, por barrio, UPZ o localidad, sin indicar la dirección completa.",
+    "use_location": "Usar mi ubicación actual (requiere autorización del navegador).",
     "invalid-location": "La ubicación actualmente no está definida."
   },
+
   "step2": {
-    "title": "Detalles",
-    "desc": "¡Lo encontramos! Ahora complete los detalles sobre su negocio.",
-    "catlabel": "Categoría",
-    "catplaceholder": "Escoja una categoría...",
+    "title": "Paso 2: Información",
+    "desc": "Una vez bien ubicado tu establecimiento en el mapa, podemos agregar sus detalles.",
+    "catlabel": "Tipo de establecimiento:",
+    "catplaceholder": "Escoge una o varias categorías...",
+
     "addressalt": "Ayúdenos rellenando la dirección completa (número de casa, código postal) o mejorando la anterior",
     "addressaltplaceholder": "Avenida América, España",
     "addressaltdesc": "Dirección",
-    "name": "Nombre",
-    "nameplaceholder": "Café Libertadores",
-    "phone": "Número de teléfono",
-    "phoneplaceholder": "12-345-678",
-    "opening": "Horario de apertura",
-    "openingplaceholder": "Lunes-Viernes 10am a 8pm",
-    "website": "Sitio web",
-    "websiteplaceholder": "http://www.example.com/",
-    "email": "Correo electrónico",
-    "emailplaceholder": "contact@example.com",
-    "twitter": "Twitter",
-    "twitterplaceholder": "@OpenStreetMap",
-    "facebook": "Facebook",
-    "facebookplaceholder": "https://www.facebook.com/OpenStreetMap",
-    "done": "Guardar"
+
+    "name": "Nombre del establecimiento:",
+    "nameplaceholder": "Mi Fruver de Galerías",
+    "phone": "Número de teléfono:",
+    "phoneplaceholder": "601 212 3456",
+    "website": "Página web:",
+    "websiteplaceholder": "mifruver.co",
+    "opening": "Horario de apertura:",
+    "openingplaceholder": "De lunes a viernes de 10am a 8pm",
+
+    "email": "Correo electrónico:",
+    "emailplaceholder": "contacto@mifruver.co",
+    "twitter": "Twitter:",
+    "twitterplaceholder": "@MiFruver",
+    "facebook": "Facebook:",
+    "facebookplaceholder": "https://www.facebook.com/MiFruver",
+    "done": "Completado"
   },
+
   "step3": {
-    "title": "Terminar",
-    "row1": "<strong>¡Gracias!</strong> Un voluntario de OpenStreetMap agregará sus datos al mapa pronto.",
-    "row2": "Puede ver la nota recién creada y estar atento a las actualizaciones en este enlace:",
-    "row3": "¿Sabía que puede agregar sus propios datos al mapa y saltarte la espera? Es muy fácil comenzar <a href=\"http://openstreetmap.org/edit\">editando OpenStreetMap</a> en su navegador.",
-    "row4": "¿Quiere agregar otra nota?",
-    "row4a": "Volver a la pantalla inicial"
+    "title": "Paso 3: Completado",
+    "row1": "<strong>¡Gracias por aportar datos al mapa!</strong> Un voluntario de OpenStreetMap agregará prontamente tus datos al mapa.",
+    "row2": "Tus datos quedaron en una nota dentro del sistema. Puedes ver la nota recién creada y estar atento a sus actualizaciones en este enlace:",
+    "row3": "¿Sabías que tu mismo puedes agregar datos al mapa y evitar la espera? Es muy fácil comenzar a <a href=\"http://openstreetmap.org/edit\">editar OpenStreetMap</a> en tu navegador. Visita la página <a href='https://learnosm.org/es/'>learnosm.org</a> o participa en un evento de <a href='http://maptime.io/bogota/'>MaptimeBogota</a>.",
+    "row4": "¿Quieres agregar otro establecimiento?",
+    "row4a": "Volver a la pantalla inicial."
   },
+
   "messages": {
-    "success": "<strong>¡Le encontramos!</strong> Mueva el marcador hasta que esté <strong>exactamente en su empresa</strong>.<br />Cuando esté satisfecho, podemos comenzar a <a href='javascript:check_coordinates()'>agregar más detalles</a>.",
+    "success": "<strong>¡Encontrado!</strong> Mueve la chincheta hasta que esté <strong>exactamente sobre la ubicación de tu negocio</strong>.<br />Te recomendamos que hagas bastante zoom para ubicar la chincheta correctamente. Cuando lo hayas ubicado bien, puedes pasar a la siguiente sección: <a href='javascript:check_coordinates()'>Agregar información del establecimiento</a>.",
     "loadingText": "Buscando..."
   },
+
   "validation": {
-    "missingCategory": "Seleccione al menos una categoría.",
-    "missingName": "Ingrese un nombre",
-    "missingPhoneOrWebsite": "Ingrese un sitio web o número de teléfono válido."
+    "missingCategory": "Error: Selecciona al menos una categoría.",
+    "missingName": "Error: Ingresa el nombre del establecimiento.",
+    "missingPhoneOrWebsite": "Error: Ingresa una página web o número de teléfonico válido."
   }
 }
