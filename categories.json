@@ -1,3 +1,4 @@
+[
 "comida, bebida: Alimentos saludable (health_food)",
 "comida, bebida: Carnicería (butcher)",
 "comida, bebida: Chocolatería (chocolate)",
@@ -141,6 +142,7 @@
 "oficina: ONG cuasi-autónoma (quango)",
 "oficina: Oficina de información / turística (guide)",
 "oficina: Oficina de puertos (harbour_master)",
+"oficina: Organización internacional (international_organization)",
 "oficina: Partido político (political_party)",
 "oficina: Períodico (newspaper)",
 "oficina: Proveedor de energía (energy_supplier)",
@@ -207,5 +209,4 @@
 "salud, belleza: Suplementos nutricionales (nutrition_supplements)",
 "salud, belleza: Tatuajes (tatto)",
 "salud, belleza: Óptica (optician)"
-[
 ]
