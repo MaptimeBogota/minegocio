@@ -19,6 +19,16 @@ function zoom_to_point(chosen_place, map, marker) {
 
     map.setView(chosen_place, 18, {animate: true});
 }
+
+var buildSelectControl = function(data) {
+        $("#category").select2({
+            multiple: true,
+            data: data,
+        });
+    };
+
+    $.getJSON('./categories.json', buildSelectControl);
+
 $("#use_my_location").click(function (e) {
     $("#couldnt-find").hide();
     $("#success").hide();
@@ -42,12 +52,13 @@ $("#use_my_location").click(function (e) {
       $("#couldnt-find").show();
     }
 });
+
 $("#find").submit(function(e) {
     e.preventDefault();
     $("#couldnt-find").hide();
     $("#invalid-location").hide();
     $("#success").hide();
-    var address_to_find = $("#address").val();
+    var address_to_find = $("#address").val() + " Bogotá, Colombia";
     if (address_to_find.length === 0) return;
     var qwarg = {
         format: 'json',
