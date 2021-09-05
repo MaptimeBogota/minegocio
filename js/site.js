@@ -131,6 +131,7 @@ $("#collect-data-done").click(function() {
         "Correo-e: " + $("#email").val() + "\n" +
         "Twitter: " + $("#twitter").val() + "\n" +
         "Facebook: " + $("#facebook").val() + "\n" +
+        "Notas: " + $("#notes").val() + "\n" +
         "#MaptimeBogota https://maptimebogota.github.io/minegocio\n",
         latlon = findme_marker.getLatLng(),
         note_data = {
