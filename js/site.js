@@ -10,30 +10,6 @@ findme_marker.setOpacity(0);
 
 if (location.hash) location.hash = '';
 
-/*
-i18n.init({ fallbackLng: 'es', postAsync: 'false' }, function() {
-    $("body").i18n();
-
-    var detectedLang = i18n.lng();
-    var buildSelectControl = function(data) {
-        $("#category").select2({
-            multiple: true,
-            data: data,
-        });
-    };
-
-    $.getJSON('./locales/' + detectedLang + '/categories.json', buildSelectControl).fail(function () {
-        // 404? Fall back to en-US
-         $.getJSON('./locales/es/categories.json', buildSelectControl);
-    });
-});
-*/
-i18next.init((err, t) => {
-  if (err) return console.log('something went wrong loading', err);
-  t('key'); // -> same as i18next.t
-});
-
-
 function zoom_to_point(chosen_place, map, marker) {
     console.log(chosen_place);
 
@@ -55,7 +31,7 @@ $("#use_my_location").click(function (e) {
 
             zoom_to_point(point, findme_map, findme_marker);
 
-            $('#success').html(i18n.t('messages.success', { escapeInterpolation: false }));
+            $('#success').html("<strong>¡Encontrado!</strong> Mueve la chincheta hasta que esté <strong>exactamente sobre la ubicación de tu negocio</strong>.<br />Te recomendamos que hagas bastante zoom para ubicar la chincheta correctamente. Cuando lo hayas ubicado bien, puedes pasar a la siguiente sección: <a href='javascript:check_coordinates()'>Agregar información del establecimiento</a>.");
             $('#success').show();
             window.scrollTo(0, $('#address').position().top - 30);
             $('.step-2 a').attr('href', '#details');
@@ -78,13 +54,13 @@ $("#find").submit(function(e) {
         q: address_to_find
     };
     var url = "https://nominatim.openstreetmap.org/search?" + $.param(qwarg);
-    $("#findme h4").text(i18n.t('messages.loadingText'));
+    $("#findme h4").text('Buscando...');
     $("#findme").addClass("loading");
     $.getJSON(url, function(data) {
         if (data.length > 0) {
             zoom_to_point(data[0], findme_map, findme_marker);
 
-            $('#success').html(i18n.t('messages.success', { escapeInterpolation: false }));
+            $('#success').html("<strong>¡Encontrado!</strong> Mueve la chincheta hasta que esté <strong>exactamente sobre la ubicación de tu negocio</strong>.<br />Te recomendamos que hagas bastante zoom para ubicar la chincheta correctamente. Cuando lo hayas ubicado bien, puedes pasar a la siguiente sección: <a href='javascript:check_coordinates()'>Agregar información del establecimiento</a>.");
             $('#success').show();
             window.scrollTo(0, $('#address').position().top - 30);
             $('.step-2 a').attr('href', '#details');
@@ -120,13 +96,13 @@ $(window).on('hashchange', function() {
 $("#collect-data-done").click(function() {
     // Basic form validation
     if ($("#category").val().length == 0) {
-        $("#form-invalid").text(i18n.t('validation.missingCategory'));
+        $("#form-invalid").text('Error: Selecciona al menos una categoría.');
         return false;
     } else if ($("#name").val().length < 2) {
-        $("#form-invalid").text(i18n.t('validation.missingName'));
+        $("#form-invalid").text('Error: Ingresa el nombre del establecimiento.');
         return false;
     } else if ($("#phone").val().length < 7 && $("#website").length < 10) {
-        $("#form-invalid").text(i18n.t('validation.missingPhoneOrWebsite'));
+        $("#form-invalid").text('Error: Ingresa una página web o número de teléfonico válido.');
         return false;
     } else {
         $("#form-invalid").text("");
