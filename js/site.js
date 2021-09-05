@@ -1,7 +1,7 @@
 var findme_map = L.map('findme-map')
     .setView([4.65341, -74.08363], 12),
     osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-    osmAttrib = '© OpenStreetMap contributors',
+    osmAttrib = '© OpenStreetMap contributors. <a href="www.openstreetmap.org/copyright">License</a>',
     osm = L.tileLayer(osmUrl, {minZoom: 9, maxZoom: 19, attribution: osmAttrib}).addTo(findme_map),
     category_data = [];
 
