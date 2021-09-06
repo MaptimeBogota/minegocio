@@ -40,7 +40,7 @@
 
             <div class='col12' id='address-step'>
                 <div class='center pad2'>
-                    <span id='instructions'>Primero, indícanos dónde está tu establecimiento. Para esto puedes poner la dirección (Carrera 24 # 53-05). Si no te logra ubicar, puedes indicar el nombre de la localidad, de la UPZ o del barrio.<br/>Los negocios virtuales que no tienen una establecimiento físico no se pueden agregar al mapa.</span>
+                    <span id='instructions'>Primero, indícanos dónde está tu establecimiento. Para esto puedes poner la dirección (Carrera 24 # 53-05). Si no te logra ubicar, puedes indicar el nombre de la localidad, de la UPZ o del barrio, y luego mueves la chincheta.<br/>Los negocios virtuales que no tienen una establecimiento físico no se pueden agregar al mapa. Esta página solo permite adicionar establecimientos en Bogotá; para otras ciudades puedes usar <a href="http://onosm.org">OnOSM.org</a>.</span>
                 </div>
                 <div class='col12'>
                     <div class='pad1'>
@@ -71,7 +71,7 @@
                 <div class='col12'>
                     <div class='clearfix col12'>
                         <label for='category'>Tipo de establecimiento:</label>
-                        <select style='width: 400px;' id='category' multiple='multiple' data-placeholder='Escoge una o varias categorías...' class='col10'>
+                        <select style='width: 600px;' id='category' multiple='multiple' data-placeholder='Escoge una o varias categorías...' class='col10'>
                         </select>
                     </div>
                     <div class='col6'>
@@ -85,7 +85,7 @@
                         <input id='opening_hours' type='text' placeholder='De lunes a viernes de 10am a 8pm'/>
                     </div>
                     <div class='col6'>
-                        <label for='address'>Dirección:</label>
+                        <label for='address'>Dirección (Obligatorio):</label>
                         <input id='address' type='text' placeholder='Avenida Carrera 12 # 34-56'/>
                         <label for='email'>Correo electrónico:</label>
                         <input id='email' type='text' placeholder='contacto@mifruver.co'/>
@@ -93,6 +93,8 @@
                         <input id='twitter' type='text' placeholder='@MiFruver'/>
                         <label for='facebook'>Facebook:</label>
                         <input id='facebook' type='text' placeholder='https://www.facebook.com/MiFruver'/>
+                    </div>
+                    <div class='clearfix col12'>
                         <label for='notes'>Notas adicionales:</label>
                         <input id='notes' type='text' placeholder='Algo más a agregar'/>
                     </div>
@@ -101,7 +103,8 @@
                         <h4><button class='col12' id='collect-data-done'>Completado</button></h4>
                     </div>
                 </div>
-                <p>Nota: Los datos del Fruver son de ejemplo, y se borran automáticamente cuando digitas tus propios datos. Si solo tu establecimiento tiene solo algunos datos de estos, ¡no importa!</p>
+                <p>Nota: Los datos del Fruver son de ejemplo, y se borran automáticamente cuando digitas tus propios datos.</p>
+                <p>Si tu establecimiento tiene solo algunos datos de estos, ¡no importa! Solo se requiere el nombre del establecimiento y su dirección, el resto es opcional.</p>
             </div>
 
             <div class='col12 pad2 hide' id='confirm-step'>

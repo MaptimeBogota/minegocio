@@ -70,7 +70,7 @@ $("#find").submit(function(e) {
         if (data.length > 0) {
             zoom_to_point(data[0], findme_map, findme_marker);
 
-            $('#success').html("<strong>¡Encontrado!</strong> Mueve la chincheta hasta que esté <strong>exactamente sobre la ubicación de tu negocio</strong>.<br />Te recomendamos que hagas bastante zoom para ubicar la chincheta correctamente. Cuando lo hayas ubicado bien, puedes pasar a la siguiente sección: <a href='javascript:check_coordinates()'>Agregar información del establecimiento</a>.");
+            $('#success').html("<strong>¡Encontrado!</strong> Mueve la chincheta hasta que esté <strong>exactamente sobre la ubicación de tu negocio</strong>.<br />Te recomendamos que hagas bastante zoom para ubicar la chincheta correctamente. Cuando lo hayas ubicado bien, puedes pasar a la siguiente sección: <a href='javascript:check_coordinates()'>Paso2 - Agregar información del establecimiento</a>.");
             $('#success').show();
             window.scrollTo(0, $('#address').position().top - 30);
             $('.step-2 a').attr('href', '#details');
@@ -111,8 +111,8 @@ $("#collect-data-done").click(function() {
     } else if ($("#name").val().length < 2) {
         $("#form-invalid").text('Error: Ingresa el nombre del establecimiento.');
         return false;
-    } else if ($("#phone").val().length < 7 && $("#website").length < 10) {
-        $("#form-invalid").text('Error: Ingresa una página web o número de teléfonico válido.');
+    } else if ($("#address").val().length < 9) {
+        $("#form-invalid").text('Error: Ingresa una dirección válida.');
         return false;
     } else {
         $("#form-invalid").text("");
