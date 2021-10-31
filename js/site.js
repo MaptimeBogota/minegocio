@@ -1,3 +1,10 @@
+/*
+Este archivo JavaScript permite modfiicar la apareciencia de la página HTML, mostrando y ocultando elementos.
+También permite hacer algunas pocas validaciones sobre los datos datos.
+Igualmente, maneja el mapa por medio de LeafLet.
+
+Version 2021-1030
+*/
 var findme_map = L.map('findme-map')
     .setView([4.65341, -74.08363], 12),
     osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
