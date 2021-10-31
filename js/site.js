@@ -40,7 +40,7 @@ $("#use_my_location").click(function (e) {
 
             zoom_to_point(point, findme_map, findme_marker);
 
-            $('#success').html("<strong>¡Encontrado!</strong> Mueve la chincheta hasta que esté <strong>exactamente sobre la ubicación de tu negocio</strong>.<br />Te recomendamos que hagas bastante zoom para ubicar la chincheta correctamente. Cuando la hayas ubicado bien, puedes pasar a la siguiente sección: <a href='javascript:check_coordinates()'>Agregar información del establecimiento</a>.");
+            $('#success').html("<strong>¡Encontrado!</strong> Mueve la chincheta hasta que esté <strong>exactamente sobre la ubicación de tu negocio</strong>.<br />Te recomendamos que hagas bastante zoom para ubicar la chincheta correctamente.<br />Cuando la hayas ubicado bien, puedes pasar a la siguiente sección:<br /> <a href='javascript:check_coordinates()'>Agregar información del establecimiento</a>.");
             $('#success').show();
             window.scrollTo(0, $('#address').position().top - 30);
             $('.step-2 a').attr('href', '#details');
@@ -109,9 +109,9 @@ $("#collect-data-done").click(function() {
         $("#form-invalid").text('Error: Selecciona al menos una categoría.');
         return false;
     } else if ($("#name").val().length < 2) {
-        $("#form-invalid").text('Error: Ingresa el nombre del establecimiento.');
+        $("#form-invalid").text('Error: Ingresa el nombre completo del establecimiento.');
         return false;
-    } else if ($("#address").val().length < 9) {
+    } else if ($("#businessaddress").val().length < 9) {
         $("#form-invalid").text('Error: Ingresa una dirección válida.');
         return false;
     } else {
@@ -124,7 +124,7 @@ $("#collect-data-done").click(function() {
         "Datos del establecimiento: \n" +
         "Nombre: " + $("#name").val() + "\n" +
         "Categorías: " + $("#category").val().join(", ") + "\n" +
-        "Dirección: " + $("#address").val() + "\n" +
+        "Dirección: " + $("#businessaddress").val() + "\n" +
         "Teléfono: " + $("#phone").val() + "\n" +
         "Horario: " + $("#opening_hours").val() + "\n" +
         "Website: " + $("#website").val() + "\n" +
@@ -159,7 +159,7 @@ function clearFields() {
     $("#twitter").val('');
     $("#opening_hours").val('');
     $("#category").val('');
-    $("#address").val('');
+    $("#businessaddress").val('');
     $("#linkcoords").empty();
 }
 
