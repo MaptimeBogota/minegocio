@@ -3,7 +3,7 @@ Este archivo JavaScript permite modfiicar la apareciencia de la página HTML, mo
 También permite hacer algunas pocas validaciones sobre los datos datos.
 Igualmente, maneja el mapa por medio de LeafLet.
 
-Version 2021-1030
+Version 2021-10-30
 */
 var findme_map = L.map('findme-map')
     .setView([4.65341, -74.08363], 12),
@@ -47,7 +47,7 @@ $("#use_my_location").click(function (e) {
 
             zoom_to_point(point, findme_map, findme_marker);
 
-            $('#success').html("<strong>¡Encontrado!</strong> Mueve la chincheta hasta que esté <strong>exactamente sobre la ubicación de tu negocio</strong>, preferiblemente en la mitad del establecimiento.<br />Te recomendamos que hagas bastante zoom para ubicar la chincheta correctamente.<br />Cuando la hayas ubicado bien, puedes pasar a la siguiente sección:<br /> <a href='javascript:check_coordinates()'>Agregar información del establecimiento</a>.");
+            $('#success').html("<strong>¡Encontrado!</strong> Mueve la chincheta hasta que esté <strong>exactamente sobre la ubicación de tu negocio</strong>, preferiblemente en la mitad del establecimiento.<br />Te recomendamos que hagas bastante zoom para ubicar la chincheta correctamente.<br />Cuando la hayas ubicado bien, puedes pasar a la siguiente sección:<br /> <a href='javascript:check_coordinates()'>Paso 2: Agregar información del establecimiento</a>.");
             $('#success').show();
             window.scrollTo(0, $('#address').position().top - 30);
             $('.step-2 a').attr('href', '#details');
@@ -77,7 +77,7 @@ $("#find").submit(function(e) {
         if (data.length > 0) {
             zoom_to_point(data[0], findme_map, findme_marker);
 
-            $('#success').html("<strong>¡Encontrado!</strong> Mueve la chincheta hasta que esté <strong>exactamente sobre la ubicación de tu negocio</strong>.<br />Te recomendamos que hagas bastante zoom para ubicar la chincheta correctamente. Cuando lo hayas ubicado bien, puedes pasar a la siguiente sección: <a href='javascript:check_coordinates()'>Paso2 - Agregar información del establecimiento</a>.");
+            $('#success').html("<strong>¡Encontrado!</strong> Mueve la chincheta hasta que esté <strong>exactamente sobre la ubicación de tu negocio</strong>, preferiblemente en la mitad del establecimiento.<br />Te recomendamos que hagas bastante zoom para ubicar la chincheta correctamente.<br />Cuando lo hayas ubicado bien, puedes pasar a la siguiente sección:<br /> <a href='javascript:check_coordinates()'>Paso 2: Agregar información del establecimiento</a>.");
             $('#success').show();
             window.scrollTo(0, $('#address').position().top - 30);
             $('.step-2 a').attr('href', '#details');
