@@ -30,7 +30,7 @@
                 <img src="img/osm.png" class="fl mr logo" alt="OpenStreetMap" />
                 <h2 class="app-title">Agrega tu establecimiento a OpenStreetMap</h2>
                 <p>OpenStreetMap es un mapa global y abierto, utilizado por millones de personas en todo el mundo para navegar y encontrar establecimientos.</p>
-                <p>¡Añadir tu local comercial, punto de venta, negocio, tienda o comercio al mapa es fácil y gratuito! Solo tienes que llenar este formulario de tres pasos.</p>
+                <p>¡Añadir tu local comercial, punto de venta, negocio, tienda o comercio al mapa es fácil y gratuito!<br /> Solo tienes que llenar este formulario de tres pasos.</p>
             </div>
 
             <div class='col12 on-1 steps clearfix'>
@@ -47,7 +47,7 @@
 
             <div class='col12' id='address-step'>
                 <div class='center pad2'>
-                    <span id='instructions'>Primero, indícanos dónde está tu establecimiento. Para esto puedes poner la dirección (Carrera 24 # 53-05). Si no te logra ubicar, puedes indicar el nombre de la localidad, de la UPZ o del barrio, y luego mueves la chincheta.<br/>Los negocios virtuales que no tienen una establecimiento físico no se pueden agregar al mapa. Esta página solo permite adicionar establecimientos en Bogotá; para otras ciudades puedes usar <a href="http://onosm.org">OnOSM.org</a>.</span>
+                    <span id='instructions'>Primero, indícanos dónde está tu establecimiento. Para esto puedes poner la dirección (por ejemplo: Carrera 24 # 53-05). Si no te logra ubicar, puedes indicar el nombre de la localidad, de la UPZ o del barrio, y luego mueves la chincheta.<br/><b>Nota:</b>Los negocios virtuales que no tienen una establecimiento físico no se pueden agregar al mapa. Esta página solo permite adicionar establecimientos en Bogotá; para otras ciudades puedes usar <a href="http://onosm.org">OnOSM.org</a>.</span>
                 </div>
                 <div class='col12'>
                     <div class='pad1'>
@@ -55,7 +55,7 @@
                             <input class='col8' id='address' placeholder='Galerías'/>
                             <button class='col4' id='findme'>Buscar</button>
                             <br />
-                            <a id="use_my_location" href="#" onclick="return false">Usar mi ubicación actual</a> (requiere autorización del navegador).
+                            O si prefieres puedes activar <a id="use_my_location" href="#" onclick="return false">Usar mi ubicación actual</a> (requiere autorización del navegador).
                         </form>
                     </div>
                 </div>
@@ -116,9 +116,9 @@
 
             <div class='col12 pad2 hide' id='confirm-step'>
                 <p><strong>¡Gracias por aportar datos al mapa!</strong> Un voluntario de OpenStreetMap agregará prontamente tus datos al mapa.</p>
-                <p><span>Tus datos quedaron en una nota dentro del sistema. Puedes ver la nota recién creada y estar atento a sus actualizaciones en este enlace:</span><span id='linkcoords'>&nbsp;</span></p>
-                <p>¿Sabías que tu mismo puedes agregar datos al mapa y evitar la espera? Es muy fácil comenzar a <a href="http://openstreetmap.org/edit">editar OpenStreetMap</a> en tu navegador. Visita la página <a href='https://learnosm.org/es/'>learnosm.org</a> o participa en un evento de <a href='http://maptime.io/bogota/'>MaptimeBogota</a>.</p>
-                <p><span>¿Quieres agregar otro establecimiento?</span>&nbsp;<a href="#location" onclick="clearFields()">Volver a la pantalla inicial.</a>!
+                <p><span>Tus datos quedaron en una nota dentro del sistema. En el siguiente enlace puedes ver la nota recién creada y estar atento a sus actualizaciones:</span><span id='linkcoords'>&nbsp;</span></p>
+                <p>¿Sabías que tu mismo puedes agregar datos al mapa y evitar la espera?<br /> Es muy fácil comenzar a <a href="http://openstreetmap.org/edit">editar OpenStreetMap</a> en tu navegador. Visita la página <a href='https://learnosm.org/es/'>learnosm.org</a> o participa en un evento de <a href='http://maptime.io/bogota/'>MaptimeBogota</a> (<a href="https://www.meetup.com/maptime-bogota-colombia-osm/">MeetUps</a>).</p>
+                <p><span>¿Quieres agregar otro establecimiento?</span>&nbsp;Vuelve a <a href="#location" onclick="clearFields()">la pantalla inicial.</a>
                 </p>
             </div>
 
