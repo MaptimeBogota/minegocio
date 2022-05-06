@@ -30,7 +30,9 @@
                 <a href="https://maptimebogota.github.io/minegocio/">
                     <img src="img/osm.png" class="fl mr logo" alt="OpenStreetMap" />
                     <h2 class="app-title">Agrega tu establecimiento a OpenStreetMap</h2>
+                    <img src="img/MaptimeBogotaLogo.png" class="fl mr logo" alt="MaptimeBogota" />
                 </a>
+                <p>MiNegocio es una herramienta para solicitar la inserción o corrección de un establecimiento en el mapa <a href="http://osm.org">OpenStreetMap</a>.</p>
                 <p>OpenStreetMap es un mapa global y abierto, utilizado por millones de personas en todo el mundo para navegar y encontrar establecimientos.</p>
                 <p>¡Añadir al mapa tu local comercial, punto de venta, negocio, tienda o comercio es fácil y gratuito!<br /> Solo tienes que llenar este formulario de tres pasos.</p>
             </div>
@@ -49,21 +51,24 @@
 
             <div class='col12' id='address-step'>
                 <div class='center pad2'>
-                    <span id='instructions'>Primero, indícanos dónde está tu establecimiento. Para esto puedes poner la dirección (por ejemplo: Carrera 24 # 53-05). Si no te la logra ubicar, puedes indicar el nombre de la localidad, de la UPZ o del barrio, y luego mueves la chincheta.<br/><b>Nota:</b> Los negocios virtuales que no tienen una establecimiento físico no se pueden agregar al mapa. Esta página solo permite adicionar establecimientos en Bogotá; para otras ciudades puedes usar <a href="http://onosm.org">OnOSM.org</a>.</span>
+                    <span id='instructions'>Para comenzar, indícanos dónde está tu establecimiento. Para esto puedes poner la dirección (por ejemplo: Carrera 24 # 53-05).<br />
+                     Si no te la logra ubicar, puedes indicar el nombre de la localidad, de la UPZ o del barrio, y luego mueves la chincheta.<br />
+                     <b>Nota:</b> Los negocios virtuales que no tienen un establecimiento físico no se pueden agregar al mapa.<br />
+                     Esta página solo permite adicionar establecimientos en Bogotá; para otras ciudades puedes usar <a href="http://onosm.org">OnOSM.org</a>.</span>
                 </div>
                 <div class='col12'>
                     <div class='pad1'>
                         <form id='find'>
-                            <input class='col8' id='address' placeholder='Galerías'/>
+                            <input class='col8' id='address' placeholder='Pon la dirección, localidad, UPZ o barrio. Como: Galerías'/>
                             <button class='col4' id='findme'>Buscar</button>
                             <br />
-                            O si prefieres puedes activar la opción de <a id="use_my_location" href="#" onclick="return false">usar mi ubicación actual</a> (requiere autorización del navegador).
+                            También puedes activar la opción de <a id="use_my_location" href="#" onclick="return false">usar mi ubicación actual</a> (requiere autorización del navegador) pero te ubicará directamente en el mapa.
                         </form>
                     </div>
                 </div>
 
                 <div class='center pad2'>
-                    <p id="couldnt-find" style='display: none;'><strong>No pudimos encontrar esta ubicación.</strong> Intenta buscar por el nombre de calle, por barrio, UPZ o localidad, sin indicar la dirección completa.</p>
+                    <p id="couldnt-find" style='display: none;'><strong>No pudimos encontrar esta ubicación.</strong> Intenta buscar por el nombre de calle, barrio, UPZ o localidad, sin indicar la dirección completa.</p>
                 </div>
                 <div class='center pad2'>
                     <p id="invalid-location" style='display: none;'>La ubicación actualmente no está definida.</p>
@@ -76,7 +81,7 @@
             </div>
 
             <div class='col12 hide' id='collect-data-step'>
-                <p>Como ya ubicaste bien tu establecimiento en el mapa, ahora puedes agregar sus detalles.</p>
+                <p>Como ya ubicaste bien tu establecimiento en el mapa, ahora puedes agregar sus detalles. Los valores en gris en los campos son ejemplos.</p>
                 <div class='col12'>
                     <div class='clearfix col12'>
                         <label for='category'>Tipo de establecimiento:</label>
@@ -113,7 +118,7 @@
                     </div>
                 </div>
                 <p>Nota: Los datos del Fruver son de ejemplo, y se borran automáticamente cuando digitas tus propios datos.</p>
-                <p>Si tu establecimiento tiene solo algunos datos de estos, ¡no importa! Solo se requiere el nombre del establecimiento y su dirección, el resto es opcional.</p>
+                <p>Si tu establecimiento tiene solo algunos datos de estos, ¡no importa! Para crear la solicitud solo se requiere el nombre del establecimiento y su dirección, lo demás es opcional.</p>
             </div>
 
             <div class='col12 pad2 hide' id='confirm-step'>
@@ -125,7 +130,8 @@
             </div>
 
             <footer>
-                <p class="center"> Si tienes alguna pregunta, puedes escribirnos a <a href='mailto:maptimebogota@gmail.com'>maptimeBogota@gmail.com</a></p>
+                <p class="center">Si tienes alguna pregunta, puedes escribirnos a <a href='mailto:maptimebogota@gmail.com'>maptimeBogota@gmail.com</a></p>
+             <p class="center">Puedes seguirnos en <a href="https://twitter.com/MaptimeBogota">Twitter</a> o <a href="https://www.instagram.com/maptimebogota/">Instagram</a>.</p>
                 <p class="center">Código fuente disponible en <a alt="Repositorio código" href='https://github.com/MaptimeBogota/notes'>GitHub</a>. Esta página es una bifurcación de <a alt="Sitio original" href='https://www.onosm.org/'>OnOSM.org</a>.</p>
             </footer>
         </div>
