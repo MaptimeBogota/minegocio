@@ -1,7 +1,7 @@
 # MiNegocio de MaptimeBogota
 
 MiNeogcio es un fork de OnOSM.org enfocado a la ciudad Bogotá.
-Esta página ayuda a propietarios o administradores de negocios a indicar los datos relativos sobre sus establecimientos.
+Esta página ayuda a propietarios o administradores de negocios a indicar los datos relativos a sus establecimientos.
 El resultado es escrito en una [Nota de OpenStreetMap](https://wiki.openstreetmap.org/wiki/ES:Notas) de forma anónima.
 
 Para ver las [notas creadas recientemente](https://ent8r.github.io/NotesReview/?view=map&map=11%2F4.6552%2F-74.1111&query=MaptimeBogota&status=open).
