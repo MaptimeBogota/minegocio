@@ -77,7 +77,7 @@ $("#find").submit(function(e) {
         if (data.length > 0) {
             zoom_to_point(data[0], findme_map, findme_marker);
 
-            $('#success').html("<strong>¡Encontrado!</strong> Mueve la chincheta hasta que esté <strong>exactamente sobre la ubicación de tu negocio</strong>, preferiblemente en la mitad del establecimiento.<br />Te recomendamos que hagas bastante zoom para ubicar la chincheta correctamente.<br />Cuando lo hayas ubicado bien, puedes pasar a la siguiente sección:<br /> <a href='javascript:check_coordinates()'>Paso 2: Agregar información del establecimiento</a>.");
+            $('#success').html("<strong>¡Encontrado!</strong> Mueve la chincheta hasta que esté <strong>exactamente sobre la ubicación de tu negocio</strong>, preferiblemente en el centro del establecimiento.<br />Te recomendamos que hagas bastante zoom para ubicar la chincheta correctamente.<br />Cuando lo hayas ubicado bien, puedes pasar a la siguiente sección:<br /> <a href='javascript:check_coordinates()'>Paso 2: Agregar información del establecimiento</a>.");
             $('#success').show();
             window.scrollTo(0, $('#address').position().top - 30);
             $('.step-2 a').attr('href', '#details');
